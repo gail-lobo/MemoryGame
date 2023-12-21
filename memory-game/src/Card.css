@@ -1,0 +1,65 @@
+/* Styles for a card in the deck */
+.card {
+  height: 200px;
+  width: 200px;
+  background-color: green;
+  border-radius: 10px;
+}
+
+/* Styles for a face-down card */
+.face-down {
+  height: 100%;
+  width: 100%;
+  transform: scale(0); 
+  border-radius: 10px;
+}
+
+/* Styles for a face-up card */
+.face-up {
+  height: 100%;
+  width: 100%;
+  transform: scale(1); 
+  border-radius: 10px;
+}
+
+/* Styles for a face-up locked card (matching pair found) */
+.face-up-lock {
+  height: 100%;
+  width: 100%;
+  transform: scale(1); 
+  border-radius: 10px;
+}
+
+/* Animation styles for a slow face-down effect */
+.slow-face-down {
+  max-width: 200px;
+  max-height: 200px;
+  animation: scaleAnimation 2s forwards;
+}
+
+/* Keyframes for the slow face-down animation */
+@keyframes scaleAnimation {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(0);
+  }
+}
+
+/* Animation styles for a slow face-down duplicate effect */
+.slow-face-down-duplicate {
+  max-width: 200px;
+  max-height: 200px;
+  animation: scaleAnimation-duplicate 2.5s forwards;
+}
+
+/* Keyframes for the slow face-down duplicate animation */
+@keyframes scaleAnimation-duplicate {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(0);
+  }
+}
